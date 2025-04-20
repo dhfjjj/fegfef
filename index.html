@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Casino</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: #ffd700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            text-shadow: 0 0 10px #ffd700, 0 0 20px #ffed4a;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .game-card {
+            background: linear-gradient(145deg, #1f1f2e, #141423);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            perspective: 1000px;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px) rotateX(5deg) rotateY(-5deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 6px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .game-thumb {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #ffd700;
+        }
+
+        .game-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .game-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffd700;
+            text-shadow: 0 0 5px #ffd700;
+        }
+
+        .game-provider {
+            font-size: 1rem;
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+
+        .play-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ffd700;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .play-button:hover {
+            background: #ffed4a;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Royal Casino</h1>
+    </header>
+
+    <div class="games-grid">
+        <div class="game-card">
+            <img src="https://via.placeholder.com/300x200" alt="Blazing Coins" class="game-thumb">
+            <div class="game-info">
+                <h3 class="game-title">Blazing Coins</h3>
+                <p class="game-provider">Amatic</p>
+                <a href="Blazing Coins.html" class="play-button">Играть</a>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="https://via.placeholder.com/300x200" alt="Book of Gold" class="game-thumb">
+            <div class="game-info">
+                <h3 class="game-title">Book of Gold</h3>
+                <p class="game-provider">Playson</p>
+                <a href="bookgold.html" class="play-button">Играть</a> <!-- Ссылка на файл bookgold.html -->
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="https://via.placeholder.com/300x200" alt="Golden Fortune" class="game-thumb">
+            <div class="game-info">
+                <h3 class="game-title">Golden Fortune</h3>
+                <p class="game-provider">NetEnt</p>
+                <a href="game.html" class="play-button">Играть</a>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="https://via.placeholder.com/300x200" alt="Royal Gems" class="game-thumb">
+            <div class="game-info">
+                <h3 class="game-title">Royal Gems</h3>
+                <p class="game-provider">Microgaming</p>
+                <a href="game.html" class="play-button">Играть</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
